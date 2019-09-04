@@ -43,7 +43,7 @@ declare namespace hapiAuthCookie {
          *
          * @default { name: 'sid', clearInvalid: false, isSameSite: 'Strict', isSecure: true, isHttpOnly: true }
          */
-        cookie?: ServerStateCookieOptions & { name: string };
+        cookie?: ServerStateCookieOptions & { name?: string };
 
         /**
          * Automatically sets the session cookie after validation to extend the current session for a new TTL duration.
